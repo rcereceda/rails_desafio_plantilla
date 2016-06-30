@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Trilli Bi - Bootstrap Landing Page</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+
+	<!-- Favicon and touch icons -->
+	<link rel="shortcut icon" href="<%= asset_path 'ico/favicon.png' %>">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="<%= asset_path 'ico/apple-touch-icon-144-precomposed.png' %>">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="<%= asset_path 'ico/apple-touch-icon-114-precomposed.png' %>">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="<%= asset_path 'ico/apple-touch-icon-72-precomposed.png' %>">
+	<link rel="apple-touch-icon-precomposed" href="<%= asset_path 'ico/apple-touch-icon-57-precomposed.png' %>">
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>
