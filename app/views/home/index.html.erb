@@ -372,7 +372,19 @@
             	<div class="section-description-icon"><span aria-hidden="true" class="icon_mail"></span></div>
                 <h2>Email updates</h2>
                 <p>Sign up now to our newsletter to receive the latest news, updates and special offers:</p>
-                <form class="form-inline" role="form" action="assets/subscribe.php" method="post">
+
+                <%= form_tag home_subscribe_path, method: :post, class: 'form-inline' do %>
+                    <%= text_field_tag "email", nil, placeholder: 'Enter your email...' %>
+                <%= submit_tag "Subscribe", class: 'btn' %>
+                <% end %>
+
+                <% if flash[:notice] %>
+                    <%= flash[:notice] %>
+                <% elsif flash[:alert] %>
+                    <%= flash[:alert] %>
+                <% end %>
+
+                <!--<form class="form-inline" role="form" action="assets/subscribe.php" method="post">
                 	<div class="form-group">
                 		<label class="sr-only" for="subscribe-email">Email address</label>
                     	<input type="text" name="email" placeholder="Enter your email..." class="subscribe-email form-control" id="subscribe-email">
@@ -380,7 +392,7 @@
                     <button type="submit" class="btn">Subscribe</button>
                 </form>
                 <div class="success-message"></div>
-                <div class="error-message"></div>
+                <div class="error-message"></div>-->
             </div>
         </div>
     </div>
@@ -412,7 +424,7 @@
             </div>
             <div class="col-sm-6 contact-form wow fadeInUp">
                 <h3>Send us an email</h3>
-                <form role="form" action="assets/contact.php" method="post">
+                <form role="form" action="" method="post">
                 	<div class="form-group">
                 		<label class="sr-only" for="contact-email">Email</label>
                     	<input type="text" name="email" placeholder="Email..." class="contact-email form-control" id="contact-email">
