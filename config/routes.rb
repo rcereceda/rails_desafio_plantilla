@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
+  get 'pages/users_data'
+
   get 'home/index'
+  get 'pages/users_data'
   post 'home/subscribe'
   root 'home#index'
 

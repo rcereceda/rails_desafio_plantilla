@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'ElegantIcons';
-	src:url('fonts/ElegantIcons.eot');
-	src:url('fonts/ElegantIcons.eot?#iefix') format('embedded-opentype'),
-		url('fonts/ElegantIcons.woff') format('woff'),
-		url('fonts/ElegantIcons.ttf') format('truetype'),
-		url('fonts/ElegantIcons.svg#ElegantIcons') format('svg');
+	src:url(<%= asset_path 'ElegantIcons.eot' %>);
+	src:url(<%= asset_path 'ElegantIcons.eot?#iefix' %>) format('embedded-opentype'),
+		url(<%= asset_path 'ElegantIcons.woff' %>) format('woff'),
+		url(<%= asset_path 'ElegantIcons.ttf' %>) format('truetype'),
+		url(<%= asset_path 'ElegantIcons.svg#ElegantIcons' %>) format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -38,6 +38,7 @@ you can use the generic selector below, but it's slower:
 	line-height: 1;
 	-webkit-font-smoothing: antialiased;
 }
+/*
 .arrow_up:before {
 	content: "\21";
 }
@@ -256,6 +257,9 @@ you can use the generic selector below, but it's slower:
 }
 .icon_documents_alt:before {
 	content: "\69";
+}
+.icon_pencil:before {
+	content: "\6a";
 }
 .icon_pencil-edit_alt:before {
 	content: "\6b";
@@ -482,6 +486,12 @@ you can use the generic selector below, but it's slower:
 .icon_tool:before {
 	content: "\e036";
 }
+.icon_cog:before {
+	content: "\e037";
+}
+.icon_cogs:before {
+	content: "\e038";
+}
 .arrow_up_alt:before {
 	content: "\e039";
 }
@@ -617,6 +627,9 @@ you can use the generic selector below, but it's slower:
 .icon_comment:before {
 	content: "\e065";
 }
+.icon_chat:before {
+	content: "\e066";
+}
 .icon_vol-mute:before {
 	content: "\e067";
 }
@@ -629,6 +642,9 @@ you can use the generic selector below, but it's slower:
 .icon_quotations_alt:before {
 	content: "\e06a";
 }
+.icon_clock:before {
+	content: "\e06b";
+}
 .icon_lock:before {
 	content: "\e06c";
 }
@@ -637,6 +653,9 @@ you can use the generic selector below, but it's slower:
 }
 .icon_key:before {
 	content: "\e06e";
+}
+.icon_cloud:before {
+	content: "\e06f";
 }
 .icon_cloud-upload:before {
 	content: "\e070";
@@ -655,6 +674,9 @@ you can use the generic selector below, but it's slower:
 }
 .icon_camera:before {
 	content: "\e075";
+}
+.icon_mail:before {
+	content: "\e076";
 }
 .icon_cone:before {
 	content: "\e077";
@@ -686,6 +708,9 @@ you can use the generic selector below, but it's slower:
 .icon_compass:before {
 	content: "\e080";
 }
+.icon_pin:before {
+	content: "\e081";
+}
 .icon_pushpin:before {
 	content: "\e082";
 }
@@ -712,6 +737,9 @@ you can use the generic selector below, but it's slower:
 }
 .icon_profile:before {
 	content: "\e08a";
+}
+.icon_group:before {
+	content: "\e08b";
 }
 .icon_grid-2x2:before {
 	content: "\e08c";
@@ -992,6 +1020,9 @@ you can use the generic selector below, but it's slower:
 .icon_flowchart:before {
 	content: "\e109";
 }
+.icon_datareport:before {
+	content: "\e0ec";
+}
 .icon_briefcase:before {
 	content: "\e0fe";
 }
@@ -1070,6 +1101,9 @@ you can use the generic selector below, but it's slower:
 .icon_flowchart_alt:before {
 	content: "\e0df";
 }
+.icon_datareport_alt:before {
+	content: "\e0f2";
+}
 .icon_briefcase_alt:before {
 	content: "\e0f4";
 }
@@ -1085,7 +1119,7 @@ you can use the generic selector below, but it's slower:
 .icon_clipboard:before {
 	content: "\e0e6";
 }
-
+*/
 
 	.glyph {
 		float: left;

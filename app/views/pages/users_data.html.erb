@@ -1,0 +1,8 @@
+<div class="container">
+<h1>Usuarios suscritos</h1>
+<ol style="text-align: left">
+<% @users.each do |u| %>
+	<li><%= u.email %></li>
+<% end %>
+</ol>
+</div>
